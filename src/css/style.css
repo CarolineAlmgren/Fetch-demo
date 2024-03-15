@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#maintitle {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: auto; 
+}
+
+.movie {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  background: #f0f0f0;           
+  margin: 10px;
+  padding: 10px;
+}
+
+.movie:hover {
+  transform: scale(1.05); /* Förstorar det enskilda elementet med 5% när musen sveps över det */
+}
+
+.search-bar {
+  background-color: #f0f0f0;
+  padding: 10px;
+  width: 100%;
+}
+
+.search-bar input[type="text"] {
+  width: calc(98% - 70px); /* Justera bredden här */
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.search-bar button {
+  width: 70px; 
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: black; 
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+#streamBtn {
+  display: flex;
+  margin-bottom: 3px;
+  background-color: red;
+  border: red;
+  padding: 3px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+
+#streamBtn:hover {
+  transform: scale(1.1); /* Förstorar det enskilda elementet med 5% när musen sveps över det */
+}
